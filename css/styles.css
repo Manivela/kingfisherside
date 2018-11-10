@@ -1,0 +1,166 @@
+/*
+ * Globals
+ */
+
+* {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700 !important;
+  font-size: 20px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  /* height: 600px; */
+
+  height: 100%;
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 5px;
+}
+/*
+ * Background
+*/
+.bg {
+  /* The image used */
+  background-image: linear-gradient(
+      rgba(33, 33, 33, 0.7),
+      rgba(33, 33, 33, 0.7)
+    ),
+    url("../images/kingfisher-background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+ * Header
+ */
+.masthead {
+  position: fixed;
+  top: 0;
+}
+.masthead-logo {
+  display: inline-block;
+  max-height: 56px;
+  max-width: 225px;
+  padding: 8px 4px 8px 12px;
+  vertical-align: middle;
+}
+.masthead-brand {
+  margin-bottom: 10px;
+  display: inline-block;
+  line-height: 1;
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+}
+.masthead-nav {
+  float: right;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+/*
+ * Cover
+ */
+
+.cover-heading {
+  font-size: 85px;
+}
+
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.horizontal > li {
+  display: inline;
+  list-style-type: none;
+}
+.horizontal > a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Media queries
+ */
+@media (max-width: 576px) {
+  .cover-heading {
+    font-size: 50px;
+  }
+  .divider {
+    display: none !important;
+  }
+  .horizontal > li {
+    display: block;
+    padding-top: 30px;
+  }
+}
